@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     },
     recess: {
       build: {
-        src: [ 'src/angular-cron-jobs.less' ],
+        src: [ 'src/angular-quartz-cron.less' ],
         dest: '<%= dirs.dest %>/<%= pkg.name %>.css',
         options: {
           compile: true,
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         }
       },
       compile: {
-        src: [ 'src/angular-cron-jobs.less' ],
+        src: [ 'src/angular-quartz-cron.less' ],
         dest: '<%= dirs.dest %>/<%= pkg.name %>.min.css',
         options: {
           compile: true,
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
       less_files: {
         files: [
           { 
-            src: [ 'src/angular-cron-jobs.less' ],
+            src: [ 'src/angular-quartz-cron.less' ],
             dest: '<%= dirs.dest %>',
             cwd: '.',
             expand: true,
@@ -80,12 +80,12 @@ module.exports = function(grunt) {
       all: {
         src: [
           'src/{,*/}*.js',
-          '!src/angular-cron-jobs.tpls.js'
+          '!src/angular-quartz-cron.tpls.js'
         ],
       }
     },
     html2js: {
-      angularcronjobs: {
+      angularquartzcron: {
         options: {
           base: 'src'
         },
@@ -131,7 +131,6 @@ module.exports = function(grunt) {
 
   grunt.renameTask("bower", "bowerInstall");
 
-  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.loadNpmTasks('grunt-conventional-changelog');

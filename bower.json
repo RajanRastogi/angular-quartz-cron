@@ -1,11 +1,11 @@
 {
   "name": "angular-quartz-cron",
-  "version": "1.4.1",
+  "version": "1.0.0",
   "main": "./dist/angular-quartz-cron.min.js",
-  "description": "A component for generating quartz compatible cron strings",
+  "description": "UI Component For Creating Quartz Cron Strings",
   "repository": {
     "type": "git",
-    "url": "git://github.com/RajanRastogi/angular-quartz-cron.git"
+    "url": "git@github.com:RajanRastogi/angular-quartz-cron.git"
   },
   "dependencies": {
     "angular": "*"
