@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('angular-cron-jobs').factory('cronService', function() {
+angular.module('angular-quartz-cron')
+.factory('aqc.cronService', function() {
     var service = {};
 
     service.setCron = function(n) {
