@@ -1,13 +1,12 @@
-describe('AngularCronJobs', function() {
+describe('AngularQuartzCron', function() {
     var $compile, $rootScope, cronService;
 
-    beforeEach(module('angular-cron-jobs'));
+    beforeEach(module('angular-quartz-cron'));
 
-
-    beforeEach(inject(function(_$compile_, _$rootScope_, _cronService_) {
+    beforeEach(inject(function(_$compile_, _$rootScope_, $injector) {
         $compile = _$compile_;
         $rootScope = _$rootScope_;
-        cronService = _cronService_;
+        cronService = $injector.get("aqc.cronService");
     }));
 
     function createView(scope) {
@@ -16,7 +15,7 @@ describe('AngularCronJobs', function() {
                 allowMinute : false
             }
         };
-        var element = angular.element('<cron-selection config="config"></cron-selection>');
+        var element = angular.element('<quartz-cron-selection config="config"></quartz-cron-selection>');
         var elementCompiled = $compile(element)(scope);
         $rootScope.$digest();
         return elementCompiled;
