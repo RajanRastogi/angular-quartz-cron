@@ -1,4 +1,5 @@
-## angular-quartz-cron
+![](https://travis-ci.org/RajanRastogi/angular-quartz-cron.svg?branch=master)
+## angular-quartz-cron 
 
 This is based on [Jacob Carter's](https://github.com/jacobscarter) project [angular-cron-jobs](https://github.com/jacobscarter/angular-cron-jobs) but provides us the [Quartz](https://quartz-scheduler.org/) compatible cron instead of the classic cron syntax.
 
