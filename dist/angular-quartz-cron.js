@@ -1,6 +1,6 @@
 /**
  * UI Component For Creating Cron Job Syntax To Send To Server
- * @version v1.0.0 - 2016-01-09 * @link https://github.com/RajanRastogi/angular-quartz-cron
+ * @version v1.0.0 - 2016-01-10 * @link https://github.com/RajanRastogi/angular-quartz-cron
  * @author Rajan Rastogi <rajan1311@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
