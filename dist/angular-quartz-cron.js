@@ -1,6 +1,6 @@
 /**
  * UI Component For Creating Cron Job Syntax To Send To Server
- * @version v1.0.0 - 2016-01-10 * @link https://github.com/RajanRastogi/angular-quartz-cron
+ * @version v1.0.0 - 2016-01-11 * @link https://github.com/RajanRastogi/angular-quartz-cron
  * @author Rajan Rastogi <rajan1311@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
@@ -14,11 +14,11 @@ angular.module("cronselection.html", []).run(["$templateCache", function($templa
     "\n" +
     "	<div class=\"select-options\">\n" +
     "		<span ng-show=\"myFrequency.base == 4\">on </span>\n" +
-    "		<select ng-show=\"myFrequency.base == 4\" class=\"cron-select day-value\" ng-model=\"myFrequency.dayValue\" ng-options=\"(value | aqc.dayName) for value in dayValue\"></select>\n" +
+    "		<select ng-show=\"myFrequency.base == 4\" class=\"cron-select day-value\" ng-model=\"myFrequency.dayValue\" ng-options=\"(value | aqc_dayName) for value in dayValue\"></select>\n" +
     "		<span ng-show=\"myFrequency.base >= 5\">on the </span>\n" +
-    "		<select ng-show=\"myFrequency.base >= 5\" class=\"cron-select day-of-month-value\" ng-model=\"myFrequency.dayOfMonthValue\" ng-options=\"(value | aqc.numeral) for value in dayOfMonthValue\"></select>\n" +
+    "		<select ng-show=\"myFrequency.base >= 5\" class=\"cron-select day-of-month-value\" ng-model=\"myFrequency.dayOfMonthValue\" ng-options=\"(value | aqc_numeral) for value in dayOfMonthValue\"></select>\n" +
     "		<span ng-show=\"myFrequency.base == 6\">of </span>\n" +
-    "		<select ng-show=\"myFrequency.base == 6\" class=\"cron-select month-value\" ng-model=\"myFrequency.monthValue\" ng-options=\"(value | aqc.monthName) for value in monthValue\"></select>\n" +
+    "		<select ng-show=\"myFrequency.base == 6\" class=\"cron-select month-value\" ng-model=\"myFrequency.monthValue\" ng-options=\"(value | aqc_monthName) for value in monthValue\"></select>\n" +
     "		<span ng-show=\"myFrequency.base >= 2\">at </span>\n" +
     "		<select ng-show=\"myFrequency.base >= 3\" class=\"cron-select hour-value\" ng-model=\"myFrequency.hourValue\" ng-options=\"value for value in hourValue\"></select>\n" +
     "		<span ng-show=\"myFrequency.base >= 3\"> : </span>\n" +
@@ -158,7 +158,7 @@ angular.module('angular-quartz-cron')
         };
     }
 ])
-.filter('aqc.numeral', function() {
+.filter('aqc_numeral', function() {
     return function(input) {
         switch (input) {
             case 1:
@@ -181,7 +181,7 @@ angular.module('angular-quartz-cron')
                 return input + 'th';
         }
     };
-}).filter('aqc.monthName', function() {
+}).filter('aqc_monthName', function() {
     return function(input) {
         var months = {
             1: 'January',
@@ -204,7 +204,7 @@ angular.module('angular-quartz-cron')
             return null;
         }
     };
-}).filter('aqc.dayName', function() {
+}).filter('aqc_dayName', function() {
     return function(input) {
         var days = {
             1: 'Sunday',

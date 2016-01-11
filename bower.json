@@ -1,6 +1,6 @@
 {
   "name": "angular-quartz-cron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/angular-quartz-cron.min.js",
   "description": "UI Component For Creating Quartz Cron Strings",
   "repository": {

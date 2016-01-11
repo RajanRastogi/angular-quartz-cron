@@ -123,7 +123,7 @@ angular.module('angular-quartz-cron')
         };
     }
 ])
-.filter('aqc.numeral', function() {
+.filter('aqc_numeral', function() {
     return function(input) {
         switch (input) {
             case 1:
@@ -146,7 +146,7 @@ angular.module('angular-quartz-cron')
                 return input + 'th';
         }
     };
-}).filter('aqc.monthName', function() {
+}).filter('aqc_monthName', function() {
     return function(input) {
         var months = {
             1: 'January',
@@ -169,7 +169,7 @@ angular.module('angular-quartz-cron')
             return null;
         }
     };
-}).filter('aqc.dayName', function() {
+}).filter('aqc_dayName', function() {
     return function(input) {
         var days = {
             1: 'Sunday',
