@@ -56,7 +56,8 @@ angular.module('angular-quartz-cron')
                 if (angular.isDefined($scope.init)) {
                     //console.log('init value found: ', $scope.init);
                     originalInit = angular.copy($scope.init);
-                    $scope.myFrequency = cronService.fromCron($scope.init);
+                    originalInit = originalInit || "";
+                    $scope.myFrequency = cronService.fromCron(angular.copy(originalInit));
                 }
 
                 $scope.$watch('init', function(newValue){
