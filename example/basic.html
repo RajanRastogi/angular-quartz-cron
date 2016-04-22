@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Usage</title>
+	<link rel="stylesheet" type="text/css" href="../dist/angular-quartz-cron.min.css">
+	<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../dist/angular-quartz-cron.min.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body>
+	<div data-ng-app="aqc-example" data-ng-controller="mainCtrl">
+		<div class="default">
+			<h2>Default Usage</h2>
+			<quartz-cron-selection data-output="output1"></quartz-cron-selection>
+			<span>cron: {{output1}}</span>
+		</div>
+
+		<div class="default">
+			<h2>With Initial value</h2>
+			<quartz-cron-selection data-output="output2" data-init="init"></quartz-cron-selection>
+			<span>cron: {{output2}}</span>
+		</div>
+
+		<div class="default">
+			<h2>With Custom Config</h2>
+			<quartz-cron-selection data-output="output3" config="config"></quartz-cron-selection>
+			<span>cron: {{output3}}</span>
+		</div>
+	</div>
+</body>
+</html>

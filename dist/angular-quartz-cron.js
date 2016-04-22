@@ -1,6 +1,6 @@
 /**
  * UI Component For Creating Cron Job Syntax To Send To Server
- * @version v1.0.0 - 2016-01-11 * @link https://github.com/RajanRastogi/angular-quartz-cron
+ * @version v1.0.0 - 2016-04-22 * @link https://github.com/RajanRastogi/angular-quartz-cron
  * @author Rajan Rastogi <rajan1311@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
@@ -91,7 +91,8 @@ angular.module('angular-quartz-cron')
                 if (angular.isDefined($scope.init)) {
                     //console.log('init value found: ', $scope.init);
                     originalInit = angular.copy($scope.init);
-                    $scope.myFrequency = cronService.fromCron($scope.init);
+                    originalInit = originalInit || "";
+                    $scope.myFrequency = cronService.fromCron(angular.copy(originalInit));
                 }
 
                 $scope.$watch('init', function(newValue){
