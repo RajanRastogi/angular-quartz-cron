@@ -5,13 +5,14 @@ This is based on [Jacob Carter's](https://github.com/jacobscarter) project [angu
 
 ### Demo:
 The demo is still in the works, sorry!
+However, there are some examples included, which should give you an idea about the usage.
 
 ### Installation:
 
-Not there on bower yet, but you can directly install off this repository.
+You can easily get the project using `bower`.
 
 ```
-bower install RajanRastogi/angular-quartz-cron
+bower install angular-quartz-cron
 ```
 
 ### Usage:
