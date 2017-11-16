@@ -3,6 +3,9 @@ angular-quartz-cron ![Build Status](https://travis-ci.org/RajanRastogi/angular-q
 
 This is based on [Jacob Carter's](https://github.com/jacobscarter) project [angular-cron-jobs](https://github.com/jacobscarter/angular-cron-jobs) but provides us the [Quartz](https://quartz-scheduler.org/) compatible cron instead of the classic cron syntax.
 
+### Update:
+All the capabilities of this project have been merged into the [angular-cron-jobs](https://github.com/jacobscarter/angular-cron-jobs) project, which adds a lot of features to the module. I would highly recommend using the `angular-cron-jobs` module over this one.
+
 ### Demo:
 
 Play around with the [demo](http://rajanrastogi.github.io/angular-quartz-cron/#/).
